@@ -1,0 +1,408 @@
+root{
+    --poppins: "Poppins", sans-serif;
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+}
+.header-section-wrapper{
+    background-image: url("CSS Advanced/Object.png");
+    background-position: center top ;
+    background-size:  cover;
+    min-height: 120vh;
+	width: 100%;
+    overflow: hidden;
+}
+.header{
+    display: flex; /* Set the header to use flexbox layout */
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 6%;
+}
+.nav-bar{
+    flex:1;
+    text-align: right;
+}
+.navbar ul li{
+    list-style: none;
+	display: inline-block;
+	padding: 8px 12px;
+	position: relative;
+    font-weight: 550;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.navbar ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+.navbar ul li::after{
+	content:"";
+	width: 0%;
+	height: 2px;
+	background: #595959;
+	display: block;
+	margin: auto;
+	transition: 0.5s;
+}
+.navbar ul li:hover::after{
+	width:100%;
+}
+#mainheading{
+    font-size: 92px;
+    position: relative;
+    margin-right: auto;
+    padding: 1.2em;
+}
+.call-to-action{
+    text-align:center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+span{
+    position: relative;
+    top: -100px;
+    right: -100px;
+    margin-left: auto;
+    margin-right: 15px;
+    padding-left: 30px;
+    font-size: 12px;
+    font-weight: 560;
+}
+.register-btn{
+    display:inline-block;
+    color: white;
+    background-color: #b244ea;
+	font-size: 10px;
+	position: relative;
+    border-radius: 20px;
+    width: 150px;  
+    height: 40px;
+    position: relative;
+    top: -50px;
+    right: 120px;
+    border: 0px solid black; /* Thin gray border */
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2); /* Subtle shadow */
+}
+.register-btn:hover{
+    border: 1px solid #595959;
+    text-decoration: none;
+    background: #9932CC;
+    transition: 0.5s;
+}
+.block-learning-blocks , h2{
+    text-align: center;
+    font-weight: 100;
+    color: white;
+    font-size: 20px;
+    position: relative;
+    top: 90px;
+}
+.learning-blocks{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.learning-item{
+    margin: 0;
+    flex-basis: 31%;
+    border-radius: 10px;
+	margin-bottom: 20px;
+	position: relative;
+	overflow: hidden;
+    top: 90px;
+    right: -70px;
+    align-items: center;
+}
+.learning-item img{
+    width: 40%;
+    height: 60%;
+    display: block;  
+}
+#Bruce{
+    border-radius: 50%;
+    overflow: hidden;
+}
+.learning-item h3{
+    position: relative;
+    right: -6px;
+    padding: 0.2em;
+    text-align: left center;
+    font-size: 14px;
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.learning-item p{
+    right: -8px;
+    position: relative;
+    top: -2px;
+    font-size: 10px;
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#learn{
+    color: #9932CC;
+}
+.learn-highlight{
+    position: relative;
+    top: 40px;
+}
+/*Quote Section */
+.quote-block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #b244ea;
+    padding: 40px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.nested-quote-block q{
+    position: relative;
+    font-size: 13px;
+    color: white;
+    line-height: 1.5;
+    top: -7px;
+    right: -10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.quote-block img{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    
+}
+.quote-block p{
+    color: white;
+    line-height: 1.5;
+    position: relative;
+    right: -10px;
+    font-size: 13px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#title{
+    font-style:italic;
+}
+#videoinformation{
+    color: black;
+    font-family: var(--poppins);
+	font-size: 20px;
+	word-wrap: break-word;
+    padding: 50px;
+    position: relative;
+    top: -5px;
+}
+#popular{
+    color:#b244ea;
+}
+.videos{
+    display: flex;
+    margin: auto;
+	text-align: center;
+    flex-direction: row;
+}
+.specific-videos img{
+    margin-bottom: 20px;
+    width: 250px;
+   height: 150px;
+   margin: 20px;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   
+}
+.specific-videos {
+    width: 48%; /* Set width for each video in a row (adjust as needed) */
+    margin-bottom: 15px; /* Adjust spacing for smaller screens */
+  }
+@media only screen and (max-width: 768px) {
+    .videoblock {
+      flex-direction: column; /* Change to row layout on smaller screens */
+      flex-wrap: wrap; /* Wrap items to multiple rows if needed */
+      justify-content: space-between; /* Distribute items evenly */
+    }
+}
+.specific-videos h3 {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
+    padding-right: 50px;
+    top: -20px;
+}
+.specific-videos p{
+    font-size: 12px;
+    position: relative;
+    top: -10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.image-container {
+
+    position: relative; /* Enable relative positioning for layering */
+  }
+  
+  .overlay-image {
+    position: absolute; /* Make the foreground image absolute */
+    top: 40%; /* Position it vertically (adjust as needed) */
+    left: 40%; /* Position it horizontally (adjust as needed) */
+    transform: translate(-50%, -50%); /* Center the image */
+     /* Adjust width as needed */
+  }
+.overlay-image:hover{
+    background-color: transparent;
+    transition: 0.5s;
+    color:#1b3a5b;
+    cursor: pointer;
+    box-shadow: #9932CC;
+}  
+#overlay{
+    width: 100px;
+    height: 100px;
+}
+#overlay1{
+    width: 100px;
+    height: 100px;
+}
+#overlay2{
+    width: 100px;
+    height: 100px;
+}
+#overlay3{
+    width: 100px;
+    height: 100px;
+}
+.star-rating{
+    text-align: center;
+    position: relative;
+    right: 80px;
+    margin-top: -30px;
+}
+.rating img{
+    width: 40px;
+    height: 40px;
+    float: left;
+    position: relative;
+    top: -20px;
+}
+.rating h3{
+    position: relative;
+    padding: 1.5em;
+    color:#b244ea;
+    right: 50px;
+    font-size: 15px;
+}
+#free{
+    position: relative;
+    padding: 1em;
+    top: -120px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.membership{
+    background-color: #00152b;
+    display: flex;
+    
+    flex-direction: column;
+    width: 80%; /* Adjust width as needed */
+    margin: 0 auto; /* Center the section horizontally */
+    padding: 50px; /* Add some padding */
+    border: 1px solid #ddd; /* Add a border */
+    border-radius: 5px; /* Add rounded corners */
+}
+.membership-benefits {
+    display: flex;
+    flex-wrap: wrap; /* Wrap benefits onto multiple rows if needed */
+    justify-content: space-between; /* Distribute benefits evenly */
+  }
+  .benefit-item p{
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 13px;
+  }
+/* Style the image within benefit items */
+.benefit-item img {
+    width: 20%; /* Display image at full width */
+    height: auto; /* Adjust height automatically */
+    margin-bottom: 10px; /* Add space below the image */
+  }
+  /* Style the headings within benefit items */
+.benefit-item h3 {
+    font-size: 18px; /* Adjust heading font size */
+    margin-bottom: 5px; /* Add space below heading */
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.membership button {
+    background-color: #b244ea; /* Green color */
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px; /* Add space above button */
+    border: none;
+    border-radius: 5px; /* Add rounded corners */
+    cursor: pointer; /* Indicate clickable button */
+  }
+.membership button:hover{
+   text-decoration: none;
+   background-color: #1b3a5b;
+   transition: 0.5s;
+}
+.faq{
+    width: 100%; /* Adjust width as needed */
+  margin: 0 auto; /* Center the section horizontally */
+  padding: 20px; /* Add some padding */
+  display: flex;
+}
+.faq h2 {
+    position: relative;
+    top: -40px;
+    padding: 20px;
+    right: -140px;
+    color: black;
+    font-size: 24px;  /* Adjust font size as needed */
+    font-weight: bold; /* Make the heading bold */
+    margin-bottom: 20px; /* Add space below the heading */
+  }
+.faq-questions {
+    width: 100%;
+    display: flex; /* Arrange questions side-by-side */
+    flex-wrap: wrap; /* Wrap questions onto multiple rows if needed */
+    justify-content: space-between; /* Distribute questions evenly */
+  }
+  .faq-item {
+    width: 45%; /* Adjust width as needed */
+    margin: 10px; /* Add spacing between items */
+    padding: 15px; /* Add padding within each item */
+    background-color: #f5f5f5; /* Light gray background */
+    border: 1px solid #eee; /* Add a border for each item */
+    border-radius: 5px; /* Add rounded corners */
+  }
+  .faq-question {
+    font-size: 18px; /* Adjust question font size */
+    font-weight: bold; /* Make question text bold */
+    margin-bottom: 5px; /* Add space below the question */
+  }
+  
+  /* Style the FAQ answer */
+  .faq-answer {
+    font-size: 16px; /* Adjust answer font size */
+    line-height: 1.5; /* Increase line spacing for readability */
+  }
+  .footer{
+    text-align:center;
+    width:100%;
+	padding: 20px 0;
+    background-color:#00152b;
+  }
+  .footer p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    font-family: var(--poppins);
+  }
+.footer  img{
+	margin:0 13px;
+	cursor: pointer;
+	padding: 18px 0;
+	text-decoration: none;
+}

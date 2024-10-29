@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: normal;
+}
+body,main{
+    display:flex;
+    
+}
+main{
+    flex: auto;
+    flex-direction: row;
+}
+body{
+    flex-direction:column;
+    
+}
+aside{
+    overflow-y: auto;
+    flex: 1;
+}
+article{
+    overflow-y: auto;
+    flex: 2;
+
+}
+header{
+    min-height: 10vh;
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    background-color:blanchedalmond;
+}
+nav {
+    display: flex;
+    padding : 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+nav, ul, li{
+    flex: 1;
+    text-align: right;
+}
+h1{
+    text-align: center;
+    font-weight: 400;
+}
+p{
+    
+	color: maroon;
+	line-height: 22px;
+	padding: 10px;
+}
+table {
+    border-collapse: collapse; /* Combine table borders */
+    border: 1px solid #ddd; /* Add a solid gray border */
+  }
+  th {
+    background-color: #eee; /* Light gray background for headers */
+    font-weight: bold; /* Bold text for headers */
+    padding: 5px 10px; /* Add padding for spacing */
+  }
+  td {
+    border: 1px solid #ddd; /* Add borders to each cell */
+    padding: 5px 10px; /* Add padding for spacing */
+  }
+  th, td {
+    text-align: left; /* Align content to the left (or right/center) */
+  }
+  article {
+    /* Set some margin for the article */
+    margin: 20px;
+    /* Add a border for a clean separation */
+    border: 1px solid #ddd;
+    /* Add some padding for better readability */
+    padding: 15px;
+  }
+  
+  h1 {
+    /* Style the heading with a larger font size */
+    font-size: 1.8em;
+    /* Center align the heading */
+    text-align: center;
+    /* Add some bottom margin for spacing */
+    margin-bottom: 10px;
+  }
+  
+  .twitter-tweet {
+    /* Style the tweet block with a light background */
+    background-color: #f0f0f0;
+    /* Add some padding for the tweet content */
+    padding: 10px;
+    /* Add a subtle border to separate tweets */
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .twitter-tweet a {
+    /* Style the link within the tweet */
+    color: #007bff; /* Twitter blue */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  .twitter-tweet a:hover {
+    /* Style the link hover effect */
+    color: #0056b3; /* Darker blue on hover */
+  }
+  
+  p {
+    /* Style the paragraph with a smaller font size */
+    font-size: 0.9em;
+    /* Align the paragraph text to the right */
+    text-align: right;
+    /* Add some top margin for spacing */
+    margin-top: 10px;
+  }
+  
+  p a {
+    /* Style the link for "Back to Homepage" */
+    color: #333; /* Darker gray */
+  }
